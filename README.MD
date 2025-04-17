@@ -1,0 +1,1 @@
+This is devops class present toipic is shell script and git 
