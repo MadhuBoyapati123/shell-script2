@@ -8,14 +8,6 @@ then
 fi
 
 
-yum remove mysql-server -y
-
-if[ $? -ne 0 ]
-then
-    echo "MySQL server installation failed"
-else
-    echo "MySQL server installated successfully"
-fi
 
 yum remove postfix -y
 
