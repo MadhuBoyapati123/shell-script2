@@ -8,7 +8,7 @@ then
 fi
 
 
-yum install mysql-server -y
+yum remove mysql-server -y
 
 if[ $? -ne 0 ]
 then
@@ -17,7 +17,7 @@ else
     echo "MySQL server installated successfully"
 fi
 
-yum install postfix -y
+yum remove postfix -y
 
 if[ $? -ne 0 ]
 then
@@ -26,7 +26,7 @@ else
     echo "Postfix installated successfully"
 fi
 
-yum install maven -y
+yum remove maven -y
 
 if[ $? -ne 0 ]
 then
