@@ -2,7 +2,7 @@
 
 #!bin/bash
 
-person1="ram"
+person1="madhu"
 person2="raju"
 
 echo "$person1: Hi $person2, good morning"
