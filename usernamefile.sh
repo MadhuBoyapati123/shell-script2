@@ -2,7 +2,7 @@ $!bin/bash
 
 echo "please enter username"
 read -s username
-echo "Enter Usernamee is $username"
+echo "Entered Usernamee is $username"
 
 
 echo "Please Enter password"
