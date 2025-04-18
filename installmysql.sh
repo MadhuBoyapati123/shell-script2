@@ -7,7 +7,7 @@ then
     echo "ERROR: Please run this with Root acces"
 fi
 
-yum remove postfix -y
+yum install postfix -y
 
 if [ $? -ne 0 ]  # Added space after 'if'
 then
@@ -16,11 +16,20 @@ else
     echo "Postfix installated successfully"
 fi
 
-yum remove maven -y
+yum install maven -y
 
 if [ $? -ne 0 ]  # Added space after 'if'
 then
     echo "Maven installation failed"
 else
     echo "Maven installated successfully"
+fi
+
+yum install mysql-server -y
+
+if [ $? -ne 0 ]  # Added space after 'if'
+then
+    echo "mysql installation failed"
+else
+    echo "mysql installated successfully"
 fi
