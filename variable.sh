@@ -2,8 +2,8 @@
 
 #!bin/bash
 
-person1="madhu"
-person2="raju"
+person1=$1
+person2=$2
 
 echo "$person1: Hi $person2, good morning"
 echo "$person2: Good morning, How r u"
