@@ -5,10 +5,10 @@ USERID=$(id -u)
 VALIDATE() {
     if [ $1 -ne 0 ]
     then
-        echo "Installation Failure please check the logs"
+        echo "remove Failure please check the logs"
         exit 1
     else
-        echo "Installation Success You have done great work"
+        echo "remove  Success You have done great work"
     fi
 }
 
@@ -18,10 +18,10 @@ then
     exit 1
 fi
 
-yum install postfix -y
+yum remove postfix -y
 VALIDATE $?
 
-yum install maven -y
+yum remove maven -y
 VALIDATE $?
 
 
