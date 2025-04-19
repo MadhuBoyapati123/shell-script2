@@ -20,12 +20,12 @@ fi
 
 # Install Postfix
 echo "Installing Postfix..."
-yum install postfix -y
+yum remove postfix -y
 VALIDATE $? "Postfix installation"
 
 # Install MySQL
 echo "Installing MySQL..."
-yum install mysql-server -y
+yum remove mysql-server -y
 VALIDATE $? "MySQL installation"
 
 # Start and enable MySQL service
